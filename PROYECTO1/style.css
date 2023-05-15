@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+    line-height: 1.5;
+    background: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE50VB8?ver=fdf8"); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    color: white;
+  }
+  
+  h1 {
+    font-family: monospace;
+    text-align: center;
+    font-size: 2.25em;
+    color: rgb(17, 50, 30);
+  }
+  
+
+  .container {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.527);
+    padding: 30px;
+    border-radius: 25px;
+  }
+  
+  .search {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    
+  }
+  
+  form {
+    display: flex;
+
+    
+  }
+  
+  input {
+    padding: 15px 10px;
+    outline: none;
+    width: 100%;
+    background-color:#ffffff81;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-right: transparent;
+  }
+  
+  .li-container {
+    background-color: transparent;
+    width: 100%;
+    
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+  }
+  
+
+
+  ul {
+    padding: 0;
+  }
+  
+  li {
+    background-color: rgba(211, 211, 211, 0.797);
+    border-radius: 40px;
+    height: 50px;
+    margin-top: 5px;
+    display: flex;
+    
+  }
+  
+  li p {
+    margin-left: 15px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: auto;
+    width: 100%;
+  }
+  .btn-add {
+    padding: 5px 15px;
+    border: none;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    color: white;
+    font-family: fantasy;
+    background-color: rgba(0, 98, 255, 0.846);
+    font-size: 1.4rem;
+    outline: none;
+    padding-left: 15px;
+  }
+  .btn-delete {
+    margin-left: auto;
+    border: none;
+    background-color: #fd023dd8;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 5px 10px;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 1.2em;
+  }
+  
+  .btn-delete:hover {
+    cursor: pointer;
+    background-color: rgba(0, 255, 21, 0.85);
+  }
+
+  
+  .btn-add:hover {
+    cursor: pointer;
+    background-color: rgba(255, 115, 0, 0.791);
+  }
+  .pendientes{
+    color: black;
+  }
+  .empty{
+    color: black;
+  }

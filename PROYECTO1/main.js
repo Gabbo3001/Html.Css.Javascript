@@ -1,7 +1,12 @@
 const input = document.querySelector("input");
 const addBtn = document.querySelector(".btn-add");
-const ol = document.querySelector("ol");
+const ul = document.querySelector("ul");
 const empty = document.querySelector(".empty");
+const pendientes = document.querySelector(".pendientes")
+
+window.addEventListener("load", () => {
+  pendientes.style.display = "none";
+});
 
 addBtn.addEventListener("click", (e) => {
   e.preventDefault();
@@ -15,9 +20,11 @@ addBtn.addEventListener("click", (e) => {
 
     li.appendChild(p);
     li.appendChild(addDeleteBtn());
-    ol.appendChild(li);
+    ul.appendChild(li);
 
     input.value = "";
+    
+    pendientes.style.display = "block";
     empty.style.display = "none";
   }
 });
@@ -25,15 +32,19 @@ addBtn.addEventListener("click", (e) => {
 function addDeleteBtn() {
   const deleteBtn = document.createElement("button");
 
-  deleteBtn.textContent = "X";
+  deleteBtn.textContent = "✔";
   deleteBtn.className = "btn-delete";
 
   deleteBtn.addEventListener("click", (e) => {
     const item = e.target.parentElement;
-    ol.removeChild(item);
+    ul.removeChild(item);
+
     const items = document.querySelectorAll("li");
+
     if (items.length === 0) {
+      pendientes.style.display = "none";
       empty.style.display = "block";
+      
     }
   });
 
