@@ -69,7 +69,7 @@ ul {
   }
   
 li {
-    background-color: rgba(211, 211, 211, 0.797);
+    background-color: rgba(12, 179, 156, 0.164);
     border-radius: 40px;
     height: 50px;
     margin-top: 5px;
@@ -98,12 +98,12 @@ li p {
   }
 .btn-add:hover {
     cursor: pointer;
-    background-color: #04bdb3;
+    background-color: #04f771d8;
   }
 .btn-delete {
     margin-left: auto;
     border: none;
-    background-color: #d34b52;
+    background-color: #ffae00;
     color: rgb(255, 255, 255);
     font-weight: bold;
     padding: 5px 10px;

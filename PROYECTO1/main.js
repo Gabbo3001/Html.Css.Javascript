@@ -13,7 +13,7 @@ addBtn.addEventListener("click", (e) => {
 
   const text = input.value;
 
-  if (text !== "") {
+  if (text !== "" && text !==" ") {
     const li = document.createElement("li");
     const p = document.createElement("p");
     p.textContent = text;

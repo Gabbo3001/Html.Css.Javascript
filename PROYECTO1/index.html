@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Tareas</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        let Alerta = alert("Bienvenido ingrese su usuario")
+            usuario = prompt("Ingrese su Usuario...")
+            if (usuario == "Gabriel") {
+                    alert("Bienvenido")
+            else{
+                    Alerta.show
+                }
+            }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -15,21 +25,18 @@
         <div class="search">
             <form>
                 <input type="text" placeholder="Agregar tarea...">
-                <button class="btn-add">+</button>
+                <button class="btn-add"> + </button>
             </form>
         </div>
-        <div class="pendientes">
-            <p>Tareas pendientes:</p>
+        <div>
+            <p class="pendientes">Tareas pendientes:</p>
+            <p class="empty">No tienes tareas pendientes</p>
         </div>
         <div class="li-container">
-            
             <ul>
-                
             </ul>
         </div>
-        <div class="empty">
-            <p>No tienes tareas pendientes</p>
-        </div>
+        
     </div>
     <script src="main.js"></script>
 </body>
