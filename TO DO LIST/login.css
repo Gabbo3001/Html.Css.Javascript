@@ -58,6 +58,8 @@ input{
     border-bottom: 1px solid var(--colorTextos);
 }
 
+
+
 input:focus{ 
     outline: none;
     color: #5e5d5d;
@@ -101,7 +103,7 @@ input:focus~.barra::before{
     width: 100%;
 }
 
-.advertencia{
+.warnings{
     width: 200px;
     text-align: center;
     margin: auto;
