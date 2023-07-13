@@ -112,9 +112,20 @@ button {
     height: 30px;
     font-size: 16px;
     cursor: pointer;
-    
+}
+.login {
+        position: absolute;
+        left: 50%;
+        top: 50px;
 }
 
+.boton-login{
+    height: 30px;
+    width: 50px;
+    border-radius: 15%;
+    color: #000000;
+
+}
 #pendientes {
     margin: 15px;
 
