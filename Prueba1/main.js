@@ -1,9 +1,9 @@
 
 const lista = document.getElementById("listaDeNotas");
 const input = document.getElementById("ingresarNota");
-const CrearNotaBoton = document.getElementById("crearNota");
+const botonCrearNota = document.getElementById("crearNota");
 
-CrearNotaBoton.addEventListener("click", function() {
+botonCrearNota.addEventListener("click", function() {
 
     const textoNota = input.value.trim();
 
