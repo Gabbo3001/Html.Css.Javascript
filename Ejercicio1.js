@@ -1,4 +1,7 @@
 
-const saludo = (nombre) => `Hola ${nombre}, bienvenido`
+let primerNombre = 'Juan';
+let segundoNombre = 'Gabriel';
 
-console.log(saludo('Gabriel'))
+const saludo = () => `Hola ${primerNombre +' '+ segundoNombre}, bienvenido`
+
+console.log(saludo())
