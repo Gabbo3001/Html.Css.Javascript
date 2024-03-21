@@ -10,18 +10,25 @@ boton.addEventListener("click", function(){
 let swapBoton = document.getElementById("swap");
 let imagen = document.getElementById("imagen");
 let urls = [
-    "https://th.bing.com/th/id/R.57fd0dee14a392d06c0b369f77d9ad06?rik=EQMlPMuFFb8u9g&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fmJRWj5T.jpg&ehk=4mvA0hrt7zbfxeNP1RH5VXPHqTaQRiWlizT5P9L%2bcXM%3d&risl=&pid=ImgRaw&r=0",
-    "https://th.bing.com/th/id/R.e8b65800b9963b795411bab4855a5e38?rik=%2fC0x5SzbM05FeQ&pid=ImgRaw&r=0",
-    "https://th.bing.com/th/id/R.9aef71598ca9e9506837349cc62788ea?rik=%2bd0M%2fF4%2f%2bT1JPw&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fKdIBAWO.jpg&ehk=B5Kik7eoGjXT5POS%2b1VIyP6%2f1CHWumdFXbyYcil%2bpOA%3d&risl=&pid=ImgRaw&r=0",
-    "https://th.bing.com/th/id/OIP.DSEkxrt99uU3L_fbBg1n6gHaEo?pid=ImgDet&rs=1"
+    "https://arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/2GO6MVOPAZHQTCOVGDZIX5SXLY.jpg",
+    "https://arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/XORO2GUXKJFYJL7LYXN25OWBII.jpg",
+    "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2018/04/vengadores-infinity-war-posters-individuales-superheroes_18.jpg?tf=2048x",
+    "https://peru21.pe/resizer/MhYRwP5X3b9RCvqGajh6Pqm97Q4=/620x0/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/HHIOFW3EGFB2TFLXDWJICMFVIM.jpg"
             ];
 
-let index = 0;
-
-swapBoton.addEventListener("click", function(){
-    index = (index + 1) % urls.length;
-    imagen.src = urls[index];
-});
+    let index = 0;
+    let imagenesCargadas = [];
+    
+    urls.forEach(url => {
+        let img = new Image();
+        img.src = url;
+        imagenesCargadas.push(img);
+    });
+    
+    swapBoton.addEventListener("click", function(){
+        index = (index + 1) % urls.length;
+        imagen.src = imagenesCargadas[index].src;
+    });
 
 //Muestra en consola contenido del formulario
 
